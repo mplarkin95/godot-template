@@ -19,6 +19,7 @@ config/icon="res://assets/icon.svg"
 EventBus="*res://src/Autoload/EventBus/EventBus.gd"
 AudioManager="*res://src/Autoload/audio/audio_manager.tscn"
 SceneTransitionManager="*res://src/Autoload/scenes/scene_transition_manager.tscn"
+GlobalEffects="*res://src/Autoload/effects/global_effects.tscn"
 
 [display]
 
