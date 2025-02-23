@@ -20,6 +20,14 @@ EventBus="*res://src/Autoload/EventBus/EventBus.gd"
 AudioManager="*res://src/Autoload/audio/audio_manager.tscn"
 SceneTransitionManager="*res://src/Autoload/scenes/scene_transition_manager.tscn"
 
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

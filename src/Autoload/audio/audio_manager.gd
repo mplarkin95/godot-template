@@ -4,7 +4,7 @@ enum Tracks {
 }
 
 const TRACKS_PATH = "res://assets/sound/music/"
-const track_paths: Dictionary = {
+var track_paths: Dictionary = {
 
 }
 var tracks: Dictionary = {}
@@ -21,6 +21,32 @@ var sound_effects: Dictionary = {}
 var sfx_players: Array[AudioStreamPlayer] = []
 
 var replay_track: bool = false
+
+
+func _init():
+	var dir = DirAccess.open(TRACKS_PATH)
+	if dir:
+		dir.list_dir_begin()
+		var file_name = dir.get_next()
+		while file_name != "":
+			if not dir.current_is_dir():
+				var extension = file_name.get_extension().to_lower()
+				assert(extension in ["mp3", "wav", "ogg"], "Invalid audio file extension for " + file_name)
+				var track_name = file_name.get_basename()
+				track_paths[track_name] = TRACKS_PATH + file_name
+			file_name = dir.get_next()
+	
+	dir = DirAccess.open(SFX_PATH)
+	if dir:
+		dir.list_dir_begin()
+		var file_name = dir.get_next()
+		while file_name != "":
+			if not dir.current_is_dir():
+				var extension = file_name.get_extension().to_lower()
+				assert(extension in ["mp3", "wav", "ogg"], "Invalid audio file extension for" + file_name)
+				var sfx_name = file_name.get_basename()
+				sfx_paths[sfx_name] = SFX_PATH + file_name
+			file_name = dir.get_next()
 
 
 func _ready():
