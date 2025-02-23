@@ -11,11 +11,6 @@ var tracks: Dictionary = {}
 
 const SFX_PATH = "res://assets/sound/sfx/"
 var sfx_paths: Dictionary = {
-	"test": "res://assets/sound/sfx/ballhit1.wav",
-    "jump": "res://assets/sound/sfx/walk1_1.wav",
-	"boink": "res://assets/sound/sfx/randomsound.wav",
-	"ball_1": "res://assets/sound/sfx/ball/ballhit1_1.wav",
-	"ball_2": "res://assets/sound/sfx/ball/ballhit2_1.wav",
 }
 var sound_effects: Dictionary = {}
 
