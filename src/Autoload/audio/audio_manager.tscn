@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpe605is7pmg7"]
+
+[ext_resource type="Script" path="res://src/Autoload/audio/audio_manager.gd" id="1_frhx8"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_frhx8")
+
+[node name="background_music" type="AudioStreamPlayer" parent="."]
+autoplay = true
+bus = &"music"
+
+[node name="sfx_bank" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="sfx_bank"]
+bus = &"Sfx"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="sfx_bank"]
+bus = &"Sfx"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="sfx_bank"]
+bus = &"Sfx"
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="sfx_bank"]
+bus = &"Sfx"
+
+[connection signal="finished" from="background_music" to="." method="_on_background_music_finished"]
