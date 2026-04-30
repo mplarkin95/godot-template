@@ -36,3 +36,8 @@ func physics_update(_delta: float):
 ## @virtual
 func process(_delta: float):
 	return
+
+## Handles input events
+## @virtual
+func input(_event: InputEvent) -> void:
+	pass

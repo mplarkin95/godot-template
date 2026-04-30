@@ -29,22 +29,25 @@ GDScript 2.0 must-knows:
 ## Project structure conventions
 ```
 res://
-├── scenes/
-│   ├── actors/       # CharacterBody2D/3D, enemies, NPCs
-│   ├── levels/       # Level/world scenes
-│   ├── ui/           # Control nodes, menus, HUD
-│   └── shared/       # Reusable sub-scenes
-├── scripts/
-│   ├── autoload/     # Singletons (GameManager, AudioManager, etc.)
-│   ├── actors/       # Actor logic scripts
-│   ├── systems/      # Game systems (inventory, combat, dialogue)
-│   └── ui/           # UI scripts
+├── src/
+│   ├── Autoload/         # Singletons (EventBus, AudioManager, SceneTransitionManager, GlobalEffects)
+│   ├── Components/       # Reusable node components (e.g. state machine)
+│   ├── Scenes/           # Game scenes
+│   ├── UI/               # Control nodes, menus, HUD
+│   │   ├── components/   # Reusable UI sub-scenes
+│   │   └── screens/      # Full-screen UI scenes (menus, settings)
+│   ├── Resources/        # .tres resource files
+│   ├── Shaders/          # Shader files
+│   │   └── 2d/
+│   └── Utils/            # Stateless utility scripts
 ├── assets/
-│   ├── sprites/      # Aseprite exports (.png + .json spritesheets)
-│   ├── models/       # Blender exports (.glb)
-│   ├── audio/
+│   ├── sprites/          # Aseprite exports (.png + .json spritesheets)
+│   ├── models/           # Blender exports (.glb)
+│   ├── sound/
+│   │   ├── music/        # Background tracks (mp3/wav/ogg)
+│   │   └── sfx/          # Sound effects (mp3/wav/ogg)
 │   └── fonts/
-└── resources/        # .tres resource files
+└── scripts/              # Shell/tooling scripts (not GDScript)
 ```
 
 ## Node naming conventions

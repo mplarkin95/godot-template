@@ -9,6 +9,5 @@ Includes:
 - shaders
 
 Needs:
-- generic menu
-- generic settings
-- generic input control
+- generic menu (UIManager autoload + main menu + pause menu)
+- generic settings (audio + display, persisted to user://settings.cfg)
