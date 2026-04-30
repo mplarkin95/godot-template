@@ -1,0 +1,25 @@
+{
+    "mcpServers": {
+      "godot-ai": {
+        "command": "uvx",
+        "args": ["mcp-proxy", "--transport", "streamablehttp", "http://127.0.0.1:8000/mcp"],
+        "env": {
+          "UV_LINK_MODE": "copy"
+        }
+      },
+      "blender": {
+        "command": "uvx",
+        "args": ["blender-mcp"],
+        "env": {
+          "DISABLE_TELEMETRY": "true"
+        }
+      },
+      "aseprite": {
+        "command": "node",
+        "args": ["~/.claude/mcp-servers/godot-mcp/build/index.js"],
+        "env": {
+          "ASEPRITE_PATH": "/Applications/Aseprite.app/Contents/MacOS/aseprite"
+        }
+      }
+    }
+  }
