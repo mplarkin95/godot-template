@@ -1,10 +1,19 @@
-# Godot Template — Domain Context
+# Game — Domain Context
 
-## What this project is
+<!-- ============================================================
+  TEMPLATE PLACEHOLDER — fill this in before starting development
+  Replace this entire comment block and the two sections below with:
+    - Game title and one-sentence pitch
+    - Genre and core loop (what does the player do every 30 seconds?)
+    - Target feel / references (e.g. "feels like Celeste but top-down")
+    - Any hard constraints (platform, scope, deadline)
+  Claude uses this file to make design and architecture decisions.
+  A missing or generic description will produce generic suggestions.
+============================================================ -->
 
-A personal Godot 4 starting-point template. Copied at the start of each new game project. Not a public/shared template and not a showcase — the AI tooling (Claude Code + MCP) is infrastructure that rides on top of it.
+## What this game is
 
-**Evergreen**: useful components and patterns are backported from shipped games over time. The README represents the current baseline target, not a permanent definition of done.
+_TODO: describe your game here._
 
 ## Canonical structure
 
