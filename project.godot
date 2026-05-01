@@ -24,6 +24,8 @@ EventBus="*res://src/Autoload/EventBus/EventBus.gd"
 AudioManager="*res://src/Autoload/audio/audio_manager.tscn"
 SceneTransitionManager="*res://src/Autoload/scenes/scene_transition_manager.tscn"
 GlobalEffects="*res://src/Autoload/effects/global_effects.tscn"
+Settings="*res://src/Autoload/settings/settings.gd"
+UIManager="*res://src/Autoload/UIManager/ui_manager.gd"
 
 [display]
 
